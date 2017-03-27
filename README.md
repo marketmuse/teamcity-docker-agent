@@ -35,6 +35,9 @@ docker tag <IMAGE ID> marketmusecom/teamcity-agent:latest
 docker login
 ```
 
-6)
+6) Push Docker image
+```
+docker push marketmusecom/teamcity-agent
+```
 
 See our [detailed instructions] (https://hub.docker.com/r/jetbrains/teamcity-agent/) on how to use the image in the Docker Hub repository .

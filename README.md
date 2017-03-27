@@ -4,7 +4,7 @@ This project contains the Dockerfile and all necessary scripts to build the Dock
 
 You can pull the ready-to-use image from the Docker Hub repository
                                      
-`docker pull jetbrains/teamcity-agent`
+`docker pull marketmusecom/teamcity-agent`
 
 If you need to build your own image, you need to perform the following:
 
@@ -22,7 +22,19 @@ apt-get install -y docker-engine=1.13.0-0~ubuntu-xenial
 
 3) Run the `docker build` command:
 ```
-docker build -t teamcity-agent
+docker build .
 ```
+
+4) Tag
+```
+docker tag <IMAGE ID> marketmusecom/teamcity-agent:latest
+```
+
+5) Login
+```
+docker login
+```
+
+6)
 
 See our [detailed instructions] (https://hub.docker.com/r/jetbrains/teamcity-agent/) on how to use the image in the Docker Hub repository .

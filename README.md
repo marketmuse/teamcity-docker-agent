@@ -20,22 +20,17 @@ If you change the operation system, update the following line in the in Dockerfi
 apt-get install -y docker-engine=1.13.0-0~ubuntu-xenial
 ```
 
-3) Run the `docker build` command:
+3) Run the `docker build` command with specific tag:
 ```
-docker build .
-```
-
-4) Tag
-```
-docker tag <IMAGE ID> marketmusecom/teamcity-agent:latest
+docker build -t marketmusecom/teamcity-agent:latest .
 ```
 
-5) Login
+4) Login
 ```
 docker login
 ```
 
-6) Push Docker image
+5) Push Docker image
 ```
 docker push marketmusecom/teamcity-agent
 ```
